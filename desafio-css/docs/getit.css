@@ -29,7 +29,10 @@ body {
 
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
 
-/* Barra superior (appbar) */
+/* ============================ */
+/*   BARRA SUPERIOR (appbar)    */
+/* ============================ */
+
 .appbar {
   display: flex;
   justify-content: flex-start;
@@ -53,10 +56,63 @@ body {
   color: #2c2c2c;
 }
 
+/* ============================ */
+/*     CONTEÚDO (container)     */
+/* ============================ */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+/* Caixa para criar novos cards */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 2rem;
+  margin: 1rem;
+
+  width: 30%;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  background-color: #ffffff;
+}
+
+/* Título do card */
+.form-card-title {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  border: solid #ffffff;
+  font-weight: bold;
+}
+
+/* Campos de texto */
+.autoresize {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.6rem;
+  border: solid #ffffff;
+  font-family: "Roboto", sans-serif
+}
+
+/* Botão de ação principal */
 .btn {
+  display: inline block;
   position: relative;
-  display: block;
+  width: 100%;
+  height: 100%;
   padding: 10px 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
 
   overflow: hidden;
 
