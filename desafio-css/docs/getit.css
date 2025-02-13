@@ -75,10 +75,11 @@ body {
   justify-content: center;
   align-items: flex-start;
 
-  padding: 2rem;
+  padding: 1.3rem;
   margin: 1rem;
 
   width: 30%;
+  height: 13rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
@@ -89,7 +90,7 @@ body {
 .form-card-title {
   width: 100%;
   padding: 0.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 2.3rem;
   border: solid #ffffff;
   font-weight: bold;
@@ -99,6 +100,7 @@ body {
 .autoresize {
   width: 100%;
   padding: 0.3rem;
+  margin-bottom: 0.3rem;
   font-size: 1.6rem;
   border: solid #ffffff;
   font-family: "Roboto", sans-serif
@@ -109,7 +111,7 @@ body {
   display: inline block;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 4rem;
   padding: 10px 15px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -157,4 +159,25 @@ body {
   padding-top: 120%;
 
   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
+
+/* ============================ */
+/*       POST-ITs (card)        */
+/* ============================ */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.3rem;
+  margin: 1rem;
+
+  width: 30%;
+  height: 13rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  background-color: #ead3a7;
 }
