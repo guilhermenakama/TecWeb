@@ -166,8 +166,39 @@ body {
 /* ============================ */
 
 .card-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  /* Espaçamento entre os cards */
+  gap: 1rem;
+  /* Separa os cards do formulário */
+  margin-top: 3rem;
+} 
+
+/* Card individual */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.3rem;
+  margin: 1rem;
+
+  width: 23rem;
+  height: 13rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  background-color: #ead3a7;
 }
+
+/* Cores possíveis dos cards */
+.card-color-1 { background-color: #ead3a7; }
+.card-color-2 { background-color: #9de0f5; }
+.card-color-3 { background-color: #ef89ba; }
+.card-color-4 { background-color: #fae890; }
+.card-color-5 { background-color: #abe9c1; }
