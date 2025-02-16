@@ -180,10 +180,11 @@ body {
 
 /* Card individual */
 .card {
+  font-family: "Permanent Marker", cursive;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   padding: 1.3rem;
   margin: 1rem;
@@ -194,6 +195,24 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
   background-color: #ead3a7;
+}
+
+/* Título do card */
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+
+  padding: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+/* Texto do card */
+.card-content {
+  font-size: 1.8rem;
+  color: #4c4c4c;
+  
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Cores possíveis dos cards */
