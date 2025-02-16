@@ -62,9 +62,9 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-
+  width: 100%;
   padding: 2rem;
 }
 
@@ -170,14 +170,4 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-  padding: 1.3rem;
-  margin: 1rem;
-
-  width: 30%;
-  height: 13rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-
-  background-color: #ead3a7;
 }
