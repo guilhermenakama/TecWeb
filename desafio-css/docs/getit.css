@@ -40,9 +40,11 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 1.5rem 2rem;
+  height: 5.5rem;
+  padding: 1.5rem 0.8rem;
 
   background-color: #f7d736;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.6);
 }
 
 /* Logo do site (foto Get-it) */
@@ -76,13 +78,13 @@ body {
   justify-content: center;
   align-items: flex-start;
 
-  padding: 1.3rem;
+  padding: 1rem;
   margin: 1rem 1rem 4rem 1rem;
 
   width: 30%;
   height: 13rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.4);
 
   background-color: #ffffff;
 }
@@ -93,8 +95,9 @@ body {
   padding: 0.3rem;
   margin-bottom: 0.5rem;
   font-size: 2.3rem;
-  border: solid #ffffff;
+  border: none;
   font-weight: bold;
+  outline: none;
 }
 
 /* Campos de texto */
@@ -103,8 +106,10 @@ body {
   padding: 0.3rem;
   margin-bottom: 0.3rem;
   font-size: 1.6rem;
-  border: solid #ffffff;
-  font-family: "Roboto", sans-serif
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Botão de ação principal */
@@ -125,7 +130,6 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
   background-color: #f7d736;
-
   transition: background-color 0.3s;
 }
 
@@ -193,7 +197,7 @@ body {
 
 /* Título do card */
 .card-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
 
   padding: 0.2rem;
