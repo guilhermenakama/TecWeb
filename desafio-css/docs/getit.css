@@ -25,6 +25,8 @@ Algumas informações úteis e dicas:
 html,
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
@@ -37,7 +39,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
+  width: 100%;
   padding: 1.5rem 2rem;
 
   background-color: #f7d736;
@@ -64,7 +66,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   padding: 2rem;
 }
 
@@ -76,12 +77,12 @@ body {
   align-items: flex-start;
 
   padding: 1.3rem;
-  margin: 1rem;
+  margin: 1rem 1rem 4rem 1rem;
 
   width: 30%;
   height: 13rem;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.6);
 
   background-color: #ffffff;
 }
@@ -166,16 +167,11 @@ body {
 /* ============================ */
 
 .card-container {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-
-  /* Espaçamento entre os cards */
-  gap: 1rem;
-  /* Separa os cards do formulário */
-  margin-top: 3rem;
 } 
 
 /* Card individual */
@@ -183,18 +179,16 @@ body {
   font-family: "Permanent Marker", cursive;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
 
-  padding: 1.3rem;
-  margin: 1rem;
+  padding: 1rem;
+  margin: 0.3rem 0.3rem 2.5rem 0.3rem; 
 
   width: 23rem;
-  height: 13rem;
+  height: 13.2rem;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-
-  background-color: #ead3a7;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 /* Título do card */
@@ -202,18 +196,29 @@ body {
   font-size: 2rem;
   font-weight: bold;
 
-  padding: 0.3rem;
-  margin-bottom: 2rem;
+  padding: 0.2rem;
+  margin-bottom: 1.6rem;
 }
 
 /* Texto do card */
 .card-content {
+  display: flex;
   font-size: 1.8rem;
   color: #4c4c4c;
-  
-  padding: 0.3rem;
-  margin-bottom: 0.5rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0.2rem;
+  margin-bottom: 0.1rem;
 }
+
+/* ============================ */
+/*  SORTEIOS DE COR E ROTAÇÃO   */
+/* ============================ */
 
 /* Cores possíveis dos cards */
 .card-color-1 { background-color: #ead3a7; }
@@ -221,3 +226,16 @@ body {
 .card-color-3 { background-color: #ef89ba; }
 .card-color-4 { background-color: #fae890; }
 .card-color-5 { background-color: #abe9c1; }
+
+/* Rotações possíveis dos cards */
+.card-rotation-1  { transform: rotate(-4.5deg); }
+.card-rotation-2  { transform: rotate(-4deg); }
+.card-rotation-3  { transform: rotate(-3deg); }
+.card-rotation-4  { transform: rotate(-2deg); }
+.card-rotation-5  { transform: rotate(-1deg); }
+.card-rotation-6  { transform: rotate(0deg);  }
+.card-rotation-7  { transform: rotate(1deg);  }
+.card-rotation-8  { transform: rotate(2deg);  }
+.card-rotation-9  { transform: rotate(3deg);  }
+.card-rotation-10 { transform: rotate(4deg);  }
+.card-rotation-11 { transform: rotate(4.5deg);  }
